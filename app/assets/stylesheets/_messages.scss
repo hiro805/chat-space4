@@ -1,0 +1,67 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+  .chat-side {
+    background-color: #2f3e51;
+    color: white;
+    height: 100%;
+    width: 300px;
+    float: left;
+      .side-header {
+        background-color: #253141;
+        height: 100px;
+        width: 300px;
+        }
+      .groups {
+        height: calc(100% - 100px);
+        background-color: #2f3e51;
+      }
+    }
+
+  .chat-main {
+    height: 100vh;
+    width: calc(100% - 300px);
+    float: left;
+    margin: 0;
+    padding: 0;
+    .main-header {
+      height: 100px;
+      width: 100%;
+      padding: 0 40px;
+      padding-top: 0px;
+      padding-right: 40px;
+      padding-bottom: 0px;
+      padding-left: 40px
+    }
+    .messages {
+      height: calc(100vh - 190px);
+      padding: 46px 40px;
+      padding-top: 46px;
+      padding-right: 40px;
+      padding-bottom: 46px;
+      padding-left: 40px;
+      background-color: #fafafa;
+      overflow: scroll;
+      overflow-x: scroll;
+      overflow-y: scroll;
+      box-sizing: border-box;
+      }
+    .form {
+      height: 90px;
+      padding: 20px 40px;
+      padding-top: 20px;
+      padding-right: 40px;
+      padding-bottom: 20px;
+      padding-left: 40px;
+      background-color: #ddd;
+      box-sizing: border-box;
+    }
+}
+
+
