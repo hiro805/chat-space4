@@ -11,7 +11,6 @@
           %li.main-header__left-box__member-list__member aaa
           %li.main-header__left-box__member-list__member aaaa
           %li.main-header__left-box__member-list__member hiro
-
       .main-header__edit-btn>Edit
     .messages
       .message
@@ -21,14 +20,9 @@
             %p.message__upper-info__date 2019/05/18(Sat) 18:59:58
           %p.message__text aaa
     .form
-      / %form{ :class => "new_message", :id => "new_message", :enctype => "multipart/form-data", :action => "/groups/1021/messages", :accept_charset => "UTF-8", :method => "post"}
-      / %input{ :name => "utf8", :type => "hidden", :value => "✓"}
-      / %input{ :type => "hidden", :name => "authenticity_token", :value => "7vKYGFDTGXvdKP1zdHlZ+UGL7ns5CvZS2sLiomSrePo1gxtMybI+RZmCyLcnFA3w7/6FvKd/1QcsutrsEaGcKQ=="}
       .input-box
-        %input{ :placeholder => "type a message", :class => "input-box__text", :type => "text", :name => "message[content]", :id => "message_content"}
+        %input{ placeholder:"type a message", class:  "input-box__text", type: "text", name: "message[content]", id: "message_content"}
           %i.far.fa-image.fa-lg
 
-      /     %label{ :class => "input-box__image", :for => "message_image", :class => "fa fa-image"}
-      /       %i.fafa-image
-      /       %input{ :class => "input-box__image__file", :type => "file", :name => "message[image]", :id => "message_image"}
-      %input{ :type => "submit", :name => "commit", :value => "Send", :class => "submit-btn", :data_disable_with => "Send"}
+
+      %input{ type: "submit", name: "commit", value: "Send", class: "submit-btn", data_disable_with: "Send"}

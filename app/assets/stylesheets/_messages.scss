@@ -20,7 +20,7 @@ body {
     background-color: #253141;
     height: 100px;
     width: 300px;
-    .side-header-box {
+    &__box {
       position: absolute;
       height: 18px;
       width: 275px;
@@ -29,7 +29,7 @@ body {
       font-size: 16px;
       font-weight: bold;
       color: #FFFFFF;
-      .side-header__box__menu {
+      &__menu {
         position: absolute;
         height: 18px;
         width: 39px;
@@ -92,7 +92,7 @@ body {
       margin-top: 35px;
       padding: 0;
       box-sizing: border-box;
-      .main-header__left-box__current-group {
+      &__left-box__current-group {
         list-style: none;
         position: absolute;
         height:23px;
