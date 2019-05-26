@@ -82,9 +82,6 @@ body {
     padding-bottom: 0px;
     padding-left: 40px;
     border-bottom: solid 1px #eee;
-      border-bottom-width: 1px;
-      border-bottom-style: solid;
-      border-bottom-color: rgb(238, 238, 238);
     top: 0px;
     .main-header__leftbox {
       height:64px;
@@ -135,14 +132,8 @@ body {
     position: relative;
     height: calc(100vh - 190px);
     padding: 46px 40px;
-    padding-top: 46px;
-    padding-right: 40px;
-    padding-bottom: 46px;
-    padding-left: 40px;
     background-color: #fafafa;
     overflow: scroll;
-    overflow-x: scroll;
-    overflow-y: scroll;
     box-sizing: border-box;
     top: 100px;
     .message {
@@ -174,10 +165,6 @@ body {
     height: 90px;
     width: 100%;
     padding: 20px 40px;
-    padding-top: 20px;
-    padding-right: 40px;
-    padding-bottom: 20px;
-    padding-left: 40px;
     background-color: #ddd;
     box-sizing: border-box;
     bottom: 0px;
