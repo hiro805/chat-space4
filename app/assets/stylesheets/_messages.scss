@@ -83,13 +83,13 @@ body {
     padding-left: 40px;
     border-bottom: solid 1px #eee;
     top: 0px;
-    .main-header__leftbox {
+    .main-header__left-box {
       height:64px;
       width:160px;
       margin-top: 35px;
       padding: 0;
       box-sizing: border-box;
-      &__left-box__current-group {
+      &__current-group {
         list-style: none;
         position: absolute;
         height:23px;
@@ -98,7 +98,7 @@ body {
         color: #333;
         margin-bottom: 15px;
       }
-      .main-header__left-box__member-list {
+      &__member-list {
         display: inline-block;
         list-style: none;
         position: absolute;
