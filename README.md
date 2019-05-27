@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ## usersテーブル
 
 |Column|Type|Options|
@@ -48,6 +48,3 @@
 ### Association
 - belongs_to :group
 - belongs_to :user
-=======
-
->>>>>>> front
