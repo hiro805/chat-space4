@@ -3,9 +3,11 @@
     .side-header__box
       %p.side-header__box__user-name>hiro
       %ul.side-header__box__menu
-        %i.fas.fa-edit
-        %i.fas.fa-cog
-        %li.side-header__box__menu__new-group
+        %li.side-header__box__menu__edit
+          %i.fas.fa-edit
+        %li.side-header__box__menu__cog
+          = link_to edit_user_path(current_user) do
+            %i.fas.fa-cog
   .groups
     .group
       %p.group__group-name>ccc
