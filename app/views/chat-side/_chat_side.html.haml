@@ -4,15 +4,18 @@
       %p.side-header__box__user-name>hiro
       %ul.side-header__box__menu
         %li.side-header__box__menu__edit
-          %i.fas.fa-edit
+          = link_to new_group_path(current_user) do
+            %i.fas.fa-edit
         %li.side-header__box__menu__cog
           = link_to edit_user_path(current_user) do
             %i.fas.fa-cog
   .groups
     .group
-      %p.group__group-name>ccc
-      %p.class.group__latest-message>aaaas
-    .group
-      %p.group__group-name>aaa
-      %p.group__latest-message>まだメッセージがありません
+      - current_user.groups.each do |group|
+        = link_to group_messages_path(group) do
+          .group__name
+            = group.name
+          .group__message
+            メッセージはまだありません。
+
       

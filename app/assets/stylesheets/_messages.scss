@@ -41,6 +41,7 @@ float: left;
         right: 5px;
         padding-right: 15px;
         font-size: 0.9em;
+        color: #FFFFFF;
       }
       .fas.fa-cog {
         position: absolute;
@@ -61,8 +62,21 @@ float: left;
       left: 10px;
       top: 20px;
       font-size: 15px;
-      padding: 10px;
+      padding: 20px 0 40px;
       margin-bottom: 40px;
+      &__name {
+        font-size: 13px;
+        color: #FFFFFF;
+        text-decoration: none;
+      }
+      &__message {
+        font-size: 13px;
+        margin-top: 5px;
+        margin-bottom: 30px;
+        color: #FFFFFF;
+        text-decoration: none;
+        
+      }
     }
   }
 
