@@ -35,7 +35,7 @@ float: left;
       width: 39px;
       top: 0px;
       right: 15px;
-      .fas.fa-edit {
+      .fa.fa-edit {
         position: absolute;
         top: 0px;
         right: 5px;
@@ -43,7 +43,7 @@ float: left;
         font-size: 0.9em;
         color: #FFFFFF;
       }
-      .fas.fa-cog {
+      .fa.fa-cog {
         position: absolute;
         top: 0px;
         right: 0px;
@@ -183,27 +183,29 @@ top: 100;
   background-color: #ddd;
   box-sizing: border-box;
   bottom: 0px;
-  .input-box {
-    background-color: white;
+  .new_message {
     position: relative;
     height: 50px;
-    width: calc(100% - 115px);
-    &__text {
+    width: 100%;
+    .form__message {
       border-style: none;
       height: 50px;
-      width: 100px;
+      width: calc(100% - 130px);
       margin-left: 10px;
+      padding-left: 10px;
     }
-    .far {
+    .form__mask {
       position: absolute;
-      right: 5px;
-      top: 15px;
-      font-size: 1.5em
+      top: 13px;
+      right: 120px;
+      height: 50px;
+      width: 32px;
+      .hidden {
+        display: none;
+        }
       }
     }
-  .submit-btn {
-    position: absolute;
-    right: 40px;
+  .form__submit {
     width: 100px;
     height: 50px;
     padding: 0 30px;
@@ -211,6 +213,9 @@ top: 100;
     background-color: #38aef0;
     color: white;
     cursor: pointer;
-    top: 20px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
   }
 }
