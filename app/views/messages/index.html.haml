@@ -6,19 +6,14 @@
         %h2.main-header__left-box__current-group ccc
         %ul.main-header__left-box__member-list
           Member：
-          %li.main-header__left-box__member-list__member aaa
-          %li.main-header__left-box__member-list__member aaa
-          %li.main-header__left-box__member-list__member aaa
-          %li.main-header__left-box__member-list__member aaaa
-          %li.main-header__left-box__member-list__member hiro
+          %li.main-header__left-box__member-list__member 
+          %li.main-header__left-box__member-list__member 
+          %li.main-header__left-box__member-list__member 
+          %li.main-header__left-box__member-list__member 
+          %li.main-header__left-box__member-list__member 
       .main-header__edit-btn>Edit
     .messages
       = render @messages
-      .message
-        .message__upper-info
-          %h2.message__upper-info__talker
-            %p.message__upper-info__date 2019/05/18(Sat) 18:59:58
-          %p.message__text aaa
     .form
       = form_for [@group, @message] do |f|
         = f.text_field :content, class: 'form__message', placeholder: 'type a message'
