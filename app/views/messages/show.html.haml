@@ -1,0 +1,3 @@
+= form_tag("/messages/#{@message.id}  method: :post,  id: "new_message" ) do
+  %textarea.textbox{:cols => "30", :name => "text", :placeholder => "type a message", :rows => "2", class: 'form__message'}
+  %input{:type => "submit", :value => "SENT"}/
