@@ -32,7 +32,6 @@ $(function() {
 
 $("#user-search-field").on("keyup", function() {
     var input = $("#user-search-field").val();
-    console.log(input)
 
 $.ajax({
   type: 'GET',
@@ -41,7 +40,6 @@ $.ajax({
   dataType: 'json'
 })
   .done(function(users){
-    console.log(users)
     $("#user-search-result").empty();
     if (users.length !== 0) {
       users.forEach(function(user){
@@ -62,7 +60,6 @@ $.ajax({
       var user_id = $(this).attr("data-user-id");
       $(this).parent().remove();
       appendUserToMemberList(name, user_id);
-      console.log(name, user_id);
     });
     $(document).on("click", '.user-search-remove', function() {
       $(this).parent().remove();
