@@ -1,5 +1,6 @@
 $(function(){
-  function buildHTML(message){
+  function buildHTML(message) {
+    var img = message.image? `<img src="${message.image}">` : "";
     var html =
       `<div class="message" data-message-id=${message.id}>
           <div class="message__upper-info">
@@ -14,8 +15,8 @@ $(function(){
             <p class="message__text__content">
               ${message.content}
             </p>
+              ${img} 
           </div>
-          <asset_path src=${message.image} >
         </div>`
       return html; 
 }
