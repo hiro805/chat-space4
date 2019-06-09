@@ -1,7 +1,8 @@
 .chat-side
   .side-header
     .side-header__box
-      %p.side-header__box__user-name>hiro
+      %p.side-header__box__user-name
+        = current_user.name
       %ul.side-header__box__menu
         %li.side-header__box__menu__edit
           = link_to new_group_path(current_user) do

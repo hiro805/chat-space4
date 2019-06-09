@@ -14,8 +14,8 @@ $(function(){
             <p class="message__text__content">
               ${message.content}
             </p>
+            <asset_path src=${message.image} >
           </div>
-          <asset_path src=${message.image} >
         </div>`
       return html; 
 }
