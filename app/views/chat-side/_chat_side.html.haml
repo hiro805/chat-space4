@@ -11,11 +11,10 @@
           = link_to edit_user_path(current_user) do
             %i.fa.fa-cog
   .groups
-    .group
-      - current_user.groups.each do |group|
+    - current_user.groups.each do |group|
+      .group
         = link_to group_messages_path(group) do
           .group__name
             = group.name
           .group__message
             = group.show_last_message
-          
