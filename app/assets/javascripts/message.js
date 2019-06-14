@@ -51,10 +51,10 @@ $(function(){
     //カスタムデータ属性を利用し、ブラウザに表示されている最新メッセージのidを取得
     var last_message_id = $('.message:last').data('message-id');
     var group_id = $('.main-header__left-box__current-group').data('group-id');
-    var url1 = `/groups/${group_id}/api/messages`
+    var url = `/groups/${group_id}/api/messages`
     $.ajax({
       //ルーティングで設定した通りのURLを指定
-      url: url1,
+      url: url,
       //ルーティングで設定した通りhttpメソッドをgetに指定
       type: 'get',
       dataType: 'json',
