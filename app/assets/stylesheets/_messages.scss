@@ -149,24 +149,23 @@ box-sizing: border-box;
       .message__upper-info {
         &__talker {
           font-weight: bold;
-          padding-bottom: 10px;
+          padding-bottom: 20px;
+          display: inline-block;
         }
         &__date {
-          padding-left: 50px;
+          padding-left: 20px;
           font-weight: normal;
           font-size: 12px;
           color: #999999;
-          position: relative;
-          top: -30px;
-          left: 10px;
+          display: inline-block;
         }
+      }
       .message__text {
         font-size: 14px;
         &__image {
           max-width: 100%;
           height: auto;
         }
-      }
       }
     }
   }
