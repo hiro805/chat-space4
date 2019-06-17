@@ -118,15 +118,6 @@ box-sizing: border-box;
         bottom: 8px;
         font-size: 12px;
         color: #999999;
-        &__member{
-          display: inline-block;
-          font-size: 12px;
-          color: #999999;
-          bottom: 3px;
-          position: relative;
-          left: -4px;
-          padding: 1px;
-        }
       }
     }
     .main-header__edit-btn {
@@ -160,22 +151,22 @@ box-sizing: border-box;
           font-weight: bold;
           padding-bottom: 10px;
         }
-          &__date {
-            padding-left: 50px;
-            font-weight: normal;
-            font-size: 12px;
-            color: #999999;
-            position: relative;
-            top: -30px;
-            left: 10px;
-          }
-        .message__text {
-          font-size: 14px;
-          &__image {
-            max-width: 100%;
-            height: auto;
-          }
+        &__date {
+          padding-left: 50px;
+          font-weight: normal;
+          font-size: 12px;
+          color: #999999;
+          position: relative;
+          top: -30px;
+          left: 10px;
         }
+      .message__text {
+        font-size: 14px;
+        &__image {
+          max-width: 100%;
+          height: auto;
+        }
+      }
       }
     }
   }
