@@ -43,11 +43,8 @@ $(function(){
     });
     return false;
   });
-
-  $(function() {
-    setInterval(reloadMessages, 5000);
-  });
   var reloadMessages = function() {
+    if (location.href.match(/\/groups\/\d+\/messages/)){
     //カスタムデータ属性を利用し、ブラウザに表示されている最新メッセージのidを取得
     var last_message_id = $('.message:last').data('message-id');
     var group_id = $('.main-header__left-box__current-group').data('group-id');
@@ -72,5 +69,7 @@ $(function(){
     .fail(function() {
       ('error');
     });
+    }
   }
+  setInterval(reloadMessages, 5000);
 });
